@@ -295,7 +295,7 @@ All scripts prompt you for values — no hardcoding required.
 ### Step 2.1 — Install NGINX Ingress, ArgoCD, External Secrets Operator
 
 ```bash
-./scripts/01-install-prerequisites.sh
+./zen-infra/scripts/01-install-prerequisites.sh
 ```
 
 The script prompts for:
@@ -315,7 +315,7 @@ At the end, the script prints the **ArgoCD admin password** — save it.
 ### Step 2.2 — Register zen-gitops repo and deploy ArgoCD Applications
 
 ```bash
-./scripts/02-bootstrap-argocd.sh
+./zen-infra/scripts/02-bootstrap-argocd.sh
 ```
 
 The script prompts for:
@@ -340,7 +340,7 @@ ArgoCD app layout per environment:
 ### Step 2.3 — Configure External Secrets Operator
 
 ```bash
-./scripts/03-setup-external-secrets.sh
+./zen-infra/scripts/03-setup-external-secrets.sh
 ```
 
 The script prompts for:
@@ -385,7 +385,7 @@ Set this repository **variable** (not secret):
 
 | Variable | Value |
 |---|---|
-| `GITOPS_REPO` | `your-github-username/zen-gitops` |
+| `GITOPS_REPO` | `chimdi247/zen-gitops` |
 
 > No AWS access keys needed — CI authenticates to AWS via OIDC (keyless).
 
