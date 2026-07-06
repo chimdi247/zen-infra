@@ -137,12 +137,12 @@ prompt_choice ENV \
 
 prompt GITOPS_REPO_URL \
   "GitOps repository HTTPS URL" \
-  "https://github.com/your-github-username/zen-gitops.git" \
+  "https://github.com/chimdi247/zen-gitops.git" \
   ""
 
 prompt GITHUB_USERNAME \
-  "Your GitHub username (used for ArgoCD repo authentication)" \
-  "your-github-username" \
+  "chimdi247 (used for ArgoCD repo authentication)" \
+  "chimdi247" \
   ""
 
 prompt_secret GITOPS_TOKEN \
