@@ -18,10 +18,10 @@ module "eks" {
   env                = "dev"
   cluster_version    = "1.33"
   subnet_ids         = module.vpc.private_eks_subnet_ids
-  node_instance_type = "t3.small"
-  desired_capacity   = 2
-  min_size           = 2
-  max_size           = 4
+  node_instance_type = "t2.large"
+  desired_capacity   = 3
+  min_size           = 3
+  max_size           = 5
 }
 
 module "rds" {
